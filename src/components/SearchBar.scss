@@ -1,0 +1,39 @@
+.searchBar {
+  width: 300px;
+  padding: 6px 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: lightgray;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: dark;
+    background: lightgray;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+    font-size: 15px;
+    background: blue;
+    outline: none;
+    border: none;
+  }
+}
