@@ -1,15 +1,22 @@
-import React from "react";
+// import { useRef } from "react";
 import { BiSearch } from "react-icons/bi";
 import "./SearchBar.scss";
 
-function SearchBar() {
+function SearchBar({ paddingY, paddingX, width, bgColor, fontSize }) {
   return (
-    <div className="searchBar">
-      <BiSearch style={{ fontSize: "25px" }} />
+    <div
+      className="searchBar"
+      style={{
+        padding: `${paddingY} ${paddingX}`,
+        width: `${width}`,
+        background: `${bgColor}`,
+      }}
+    >
+      <BiSearch style={{ fontSize: `${fontSize}` }} />
       <input
         type="search"
-        className="border-none outline-none bg-gray-200 px-1 text-sm"
         placeholder="Search Twitter"
+        style={{ background: `${bgColor}` }}
       />
       <button>X</button>
     </div>

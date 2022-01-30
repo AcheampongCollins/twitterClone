@@ -1,21 +1,22 @@
 .searchBar {
-  width: 300px;
-  padding: 6px 10px;
+  height: 30px;
   border-radius: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: lightgray;
+  // background: lightgrey;
+  // border: 1px solid lightgrey;
+  outline: none;
 
   input {
     width: 100%;
-    border: none;
-    outline: none;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 18px;
+    border: none;
+    outline: none;
     color: dark;
-    background: lightgray;
+    // background: lightgrey;
   }
 
   input::placeholder {
@@ -36,4 +37,8 @@
     outline: none;
     border: none;
   }
+}
+
+.searchBar:focus {
+  border: 1px solid blue;
 }

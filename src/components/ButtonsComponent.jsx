@@ -1,13 +1,21 @@
-import React from "react";
-import "./TweetComponent.scss";
-function ButtonsComponent({ width, padding, color, text }) {
+import "./ButtonsComponent.scss";
+function ButtonsComponent({
+  width = 50,
+  height = 50,
+  padding = 15,
+  color = "red",
+  text = "tweet",
+  radius = 100,
+}) {
   return (
     <button
       className="tweet"
       style={{
-        width: `${width}`,
+        width: `${width}px`,
+        height: `${height}px`,
         background: `${color}`,
         padding: `${padding} 0px`,
+        borderRadius: `${radius}%`,
       }}
     >
       {text}
